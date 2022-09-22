@@ -17,16 +17,17 @@
             <div style="margin-top:40px">
                 <h1 >{{welcome}}</h1>
             </div> 
-        </div>
+        </div><img src="type.gif" style="float:left;width:90px;margin-right: 20px;">
         <div class="content"> 
             <div class="row">
                 <h3 style="color:darkblue;">Instructions</h3> 
                 <h4 style="color:darkblue;">{{instructions}}</h4> 
+                
             </div> 
             <div class="gameWin"> 
                 <div v-if="game=='Speed Typer'"> 
                     <div style="text-align:center; margin-top:30px">
-                         
+                        
                         <div v-if="!StyperInputDisable && !Styperpass1">
                             <h1>{{StyperWords[0]}}</h1>
                             <input v-on:keyup="check()" type="text" autofocus v-model="StyperInput" style="text-align:center; margin-top:30px; font-size: 20px ;"  /><br>
@@ -511,7 +512,7 @@
                 left: 0px;
                 z-index: 3;
                 box-shadow: 1px 1px 5px 3px #ccc;
-                background-image: linear-gradient(rgb(255, 242, 172),rgb(255, 244, 219), rgb(255, 255, 255), rgba(121, 152, 255, 0.791));
+                background-image: linear-gradient(rgba(121, 152, 255, 0.791),rgb(255, 244, 219), rgb(255, 255, 255), rgba(121, 152, 255, 0.791));
              }
              .floatLeft{
                 float:left
