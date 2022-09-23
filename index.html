@@ -8,7 +8,7 @@
         <div id="minigames" >
         <div class="header">
             <div class="row">
-                <h3 class="floatLeft">Selected Game : </h3>
+                <h3 class="floatLeft" style=" color: White;">Selected Game : </h3>
                 <select class="floatLeft" style="margin-top:20px" v-model="game" v-on:change="welcomemsg()"> 
                     <option value="Speed Typer" >Speed Typer</option>
                     <option value="Find the mine"  >Find the mine</option>
@@ -16,7 +16,7 @@
                 </select>
             </div> 
             <br>
-            <div style="margin-top:40px">
+            <div style="margin-top:40px;color: White;">
                 <h1 >{{welcome}}</h1>
             </div> 
         </div><img src="type.gif" style="float:left;width:90px;margin-right: 20px;">
@@ -166,6 +166,11 @@
             <div class="row" style="text-align:center;margin-top: 20px;"> 
                 <button class="strtbtn" v-on:click="start()" v-if="StyperInputDisable">Start </button>
             </div> 
+        </div>
+        <div style="position:fixed; bottom:0px;left:0px; width:100%; min-height:50px;background-image: linear-gradient(rgba(121, 152, 255, 0.791),rgb(104, 138, 253),rgb(70, 113, 255), rgba(121, 152, 255, 0.791));
+        ;padding-top: 5px; color:darkblue">
+            Kumuduni P Jayakody<br>
+            Eduonix VueJs MiniGames
         </div>
         </div>
         
@@ -544,7 +549,7 @@
                 left: 0px;
                 z-index: 3;
                 box-shadow: 1px 1px 5px 3px #ccc;
-                background-image: linear-gradient(rgba(121, 152, 255, 0.791),rgb(255, 244, 219), rgb(255, 255, 255), rgba(121, 152, 255, 0.791));
+                background-image: linear-gradient(rgba(121, 152, 255, 0.791),rgb(104, 138, 253),rgb(70, 113, 255), rgba(121, 152, 255, 0.791));
              }
              .floatLeft{
                 float:left
